@@ -1,0 +1,26 @@
+---
+// src/components/DireccionCeremonia.astro
+// La ceremonia religiosa: solo los datos. El diseño está en TarjetaLugar.
+import TarjetaLugar from "./TarjetaLugar.astro";
+
+// ── DATOS EDITABLES ───────────────────────────────────────────
+const titulo = "Ceremonia Religiosa";
+const lugar = "Parroquia Santa Rosa de los Andes";
+const direccion = "Av. Ballivián #1450, Calacoto";
+const hora = "16:00 hrs.";
+// En la plantilla de muestra el botón no lleva a ningún lado ("#")
+const enlaceMapa = "#";
+const textoBoton = "Ver ubicación";
+// ──────────────────────────────────────────────────────────────
+---
+
+<TarjetaLugar
+    id="ceremonia"
+    titulo={titulo}
+    icono="iglesia.png"
+    lugar={lugar}
+    direccion={direccion}
+    hora={hora}
+    enlaceMapa={enlaceMapa}
+    textoBoton={textoBoton}
+/>
